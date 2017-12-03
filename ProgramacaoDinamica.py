@@ -111,7 +111,7 @@ def onclick(event):
     event.canvas.draw()
 
 #inicializa um grafo aleatorio
-G = nx.gnm_random_graph(8, 12)
+G = nx.gnm_random_graph(4, 5)
 
 #adiciona pesos aleatorios ao grafo
 for (u, v) in G.edges():
@@ -127,3 +127,4 @@ fig.canvas.mpl_connect('button_press_event', onclick)
 
 #printa na tela os grafos
 plt.show()
+

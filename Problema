@@ -1,0 +1,14 @@
+Mariana Cavichioli Silva RA:726568
+Rafael Bastos Saito RA: 726580
+Turma C
+
+ÁRVORES GERADORAS MÍNIMAS
+
+O problema da árvore geradora de custo mínimo é um problema fundamental sobre grafos não-dirigidos com custos nas arestas. Uma árvore geradora mínima de G é qualquer árvore geradora de G que tenha custo mínimo.  Em outras palavras, uma árvore geradora T de G é mínima se nenhuma outra árvore geradora tem custo estritamente menor que o de T.  Árvores geradoras mínimas também são conhecidas pela abreviatura MST de minimum spanning tree. 
+Assim, para resolver o problema foram implementados três tipos de algoritmos, dois com estratégia gulosa e um utilizando programação dinâmica.
+
+A ideia geral do algoritmo de Kruskal é a cada passo escolher a aresta de menor peso que seja segura, ou seja, que não forme ciclos. Dessa forma, inicialmente cada vértice é colocado num grupo distinto e cada vez que uma aresta é inserida, os dois vértices extremidades passam a fazer parte do mesmo grupo. Assim, arestas que ligam vértices do mesmo grupo, formam ciclos e devem ser evitadas. O algoritmo é guloso porque sempre tenta a aresta de menor peso.
+
+O algoritmo de Prim inicia em uma raiz R. Enquanto T não contém todos os vértices de G, o algoritmo iterativamente adiciona a T a aresta de menor peso que sai do conjunto dos vértices finalizados e chega no conjunto dos vértices em aberto, atualizando e mantendo armazenado o menor  custo de entrada para qualquer vértice v do grafo.
+
+O algoritmo de Programação dinâmica é realizado a partir da criação de uma matriz contendo os pesos de todas as arestas. Dessa forma, o algoritmo percorre cada linha da matriz procurando o menor valor e adicionando na árvore as arestas seguras, que não formam ciclos, e que possuem menor peso.
