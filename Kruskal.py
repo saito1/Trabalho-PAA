@@ -72,7 +72,7 @@ def onclick(event):
     global toggle
     global j
    
-    event.canvas.figure.
+    event.canvas.figure.clear()
     
     #Se foi identificado o clique, imprime o grafo inicial na tela
     if toggle:
