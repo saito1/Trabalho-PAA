@@ -12,3 +12,9 @@ A ideia geral do algoritmo de Kruskal é a cada passo escolher a aresta de menor
 O algoritmo de Prim inicia em uma raiz R. Enquanto T não contém todos os vértices de G, o algoritmo iterativamente adiciona a T a aresta de menor peso que sai do conjunto dos vértices finalizados e chega no conjunto dos vértices em aberto, atualizando e mantendo armazenado o menor  custo de entrada para qualquer vértice v do grafo.
 
 O algoritmo de Programação dinâmica é realizado a partir da criação de uma matriz contendo os pesos de todas as arestas. Dessa forma, o algoritmo percorre cada linha da matriz procurando o menor valor e adicionando na árvore as arestas seguras, que não formam ciclos, e que possuem menor peso.
+
+OBS:
+-Rodar os programas no linux:
+	python nome_do_arquivo.py
+
+	
