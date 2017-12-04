@@ -96,8 +96,8 @@ def onclick(event):
 
 #Main
     
-#Cria um grafo aleatório com 10 vértices e 15 arestas.
-G = nx.gnm_random_graph(10, 15)
+#Cria um grafo aleatório com 5 vértices e 7 arestas.
+G = nx.gnm_random_graph(5, 7)
 
 #Da pesos aleatórios de 1 a 10 às arestas do grafo.
 for (u, v) in G.edges():
